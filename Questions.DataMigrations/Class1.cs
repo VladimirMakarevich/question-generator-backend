@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.DataMigrations
+namespace Ti.Questions.DataMigrations
 {
     public class Class1
     {

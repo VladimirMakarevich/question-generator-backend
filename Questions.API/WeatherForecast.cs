@@ -1,6 +1,6 @@
 using System;
 
-namespace Questions.API
+namespace Ti.Questions.API
 {
     public class WeatherForecast
     {

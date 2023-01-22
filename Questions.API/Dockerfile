@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
-COPY ["Questions.API/Questions.API.csproj", "Questions.API/"]
-RUN dotnet restore "Questions.API/Questions.API.csproj"
+COPY ["Ti.Questions.API/Ti.Questions.API.csproj", "Ti.Questions.API/"]
+RUN dotnet restore "Ti.Questions.API/Ti.Questions.API.csproj"
 COPY . .
-WORKDIR "/src/Questions.API"
-RUN dotnet build "Questions.API.csproj" -c Release -o /app/build
+WORKDIR "/src/Ti.Questions.API"
+RUN dotnet build "Ti.Questions.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Questions.API.csproj" -c Release -o /app/publish
+RUN dotnet publish "Ti.Questions.API.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Questions.API.dll"]
+ENTRYPOINT ["dotnet", "Ti.Questions.API.dll"]

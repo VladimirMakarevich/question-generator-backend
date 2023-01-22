@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.Core
+namespace Ti.Questions.Core
 {
     public class Class1
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.UnitTests
+namespace Ti.Questions.UnitTests
 {
     public class Class1
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.Models
+namespace Ti.Questions.Models
 {
     public class Class1
     {

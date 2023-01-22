@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.API.IntegrationTests
+namespace Ti.Questions.API.IntegrationTests
 {
     public class Class1
     {

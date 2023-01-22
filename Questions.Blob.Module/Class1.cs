@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.Blob.Module
+namespace Ti.Questions.Blob.Module
 {
     public class Class1
     {

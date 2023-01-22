@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Questions.Data
+namespace Ti.Questions.Data
 {
     public class Class1
     {
